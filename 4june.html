@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+let name;
+name = prompt("What is your name?");
+
+if (name){
+    document.write("Hello, " + name + "!");
+
+    let pcm=prompt("Enter your stream in 12th")
+    if (pcm=="pcm")
+    {
+        let marks=prompt("Enter your 12th's percentage")
+        if (marks>=60)
+        {
+            document.write("You are eligible for this course")
+            
+        }
+        else{
+            document.write("Sorry, you are not eligible for this course");
+        }
+    
+    }
+
+    else{
+        document.write("Sorry, you are not eligible for this course");
+    }
+}
+
+</script>
+</html>
