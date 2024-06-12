@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Enter Your First number</label>
+
+    <input id="input" type="text">
+    <br><br>
+    <label for="">Enter Your second number</label>
+
+    <input id="input2" type="text">
+    <br><br>
+    <!-- <label for="" >Type your operator (+,-,/,*)</label>
+    <input type="text" id="options"> -->
+    <br>
+    <select name="" id="options">
+        <option value="">Select a operator</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+<br><br>
+    <button onclick="cal()">click here to calculate</button>
+
+</body>
+<script>
+
+    function cal(){
+        
+        let num1=document.getElementById('input').value;
+        let num2=document.getElementById('input2').value;
+        let operator=document.getElementById('options').value;
+
+        if(operator=="+"){
+            document.write(`The Sum of you number is ${parseInt(num1)+parseInt(num2)}`)
+        }
+        else if(operator=="-"){
+            document.write(`The Sum of you number is ${parseInt(num1)-parseInt(num2)}`)
+        }
+        else if(operator=="/"){
+            document.write(`The Sum of you number is ${parseInt(num1)/parseInt(num2)}`)
+        }
+        else if(operator=="*"){
+            document.write(`The Sum of you number is ${parseInt(num1)*parseInt(num2)}`)
+        }
+
+    }
+
+</script>
+</html>
