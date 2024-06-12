@@ -16,6 +16,7 @@
         border: 1px solid black;
         display: flex;
         flex-direction: column;
+        box-shadow: 10px 10px black ;
     }
 
     .box{
@@ -23,6 +24,7 @@
         border-bottom: 1px solid black;
         width: 100%;
         box-shadow: 10px 10px black inset;
+        text-align: center;
     }
 
     .box2{
@@ -105,7 +107,9 @@
 <body>
     
     <div class="main_div">
-        <div id="boxx" class="box"></div>
+        <div id="boxx" class="box">
+            <h1 id="text">Click any Button to fill me!</h1>
+        </div>
         <div class="box2">
             <button class="btn" id="btn1" onclick="press()"></button>
             <button class="btn2" id="green_btn" onclick="green()"></button>
@@ -151,64 +155,82 @@
         let button2=document.getElementById('btnn2')
         let button3=document.getElementById('btnn3')
         let box=document.getElementById('boxx')
+        let text=document.getElementById('text')
         if(button1){
             box.style.background="red";
             box.style.boxShadow="10px 10px green inset"
+            text.style.display="none"
         }
     }
 
     function green(){
+        let text=document.getElementById('text')
         let green_btn=document.getElementById('green_btn')
         let box=document.getElementById('boxx')
         if(green_btn){
             box.style.background="green"
             box.style.boxShadow="10px 10px yellow inset"
+            text.style.display="none"
 
         }
     }
 
     function yellow(){
+        let text=document.getElementById('text')
         let yellow_btn=document.getElementById('green_btn')
         let box=document.getElementById('boxx')
         if(yellow_btn){
             box.style.background="yellow"
             box.style.boxShadow="10px 10px blue inset"
+            text.style.display="none"
+
 
         }
     }
     function blue(){
+        let text=document.getElementById('text')
         let blue_btn=document.getElementById('blue_btn')
         let box=document.getElementById('boxx')
         if(blue_btn){
             box.style.background="blue"
             box.style.boxShadow="10px 10px orange inset"
+            text.style.display="none"
+
 
         }
     }
     function orange(){
+        let text=document.getElementById('text')
         let orange_btn=document.getElementById('orange_btn')
         let box=document.getElementById('boxx')
         if(yellow_btn){
             box.style.background="orange"
             box.style.boxShadow="10px 10px brown inset"
+            text.style.display="none"
+
 
         }
     }
     function brown(){
+        let text=document.getElementById('text')
         let brown_btn=document.getElementById('brown_btn')
         let box=document.getElementById('boxx')
         if(brown_btn){
             box.style.background="brown"
             box.style.boxShadow="10px 10px red inset"
+            text.style.display="none"
+
 
         }
     }
     function reset(){
         let reset_btn=document.getElementById('reset_btn')
         let box=document.getElementById('boxx')
+        let text=document.getElementById('text')
         if(reset){
             box.style.background="none"
             box.style.boxShadow="10px 10px black inset"
+            text.style.display="block"
         }
     }
 
