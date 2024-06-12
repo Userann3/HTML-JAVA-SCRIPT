@@ -5,8 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .main_div{
+        height: 400px;
+        width: 300px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box{
+        height: 40%;
+        border-bottom: 1px solid black;
+        width: 100%;
+        box-shadow: 10px 10px black inset;
+    }
+
+    .box2{
+        height: 100px;
+        width: 100%;
+        background-color: pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .box3{
+        height: 100px;
+        width: 100%;
+        background-color: bisque;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .box4{
+        width: 100%;
+        height: 40px;
+        background-color: rgb(185, 185, 185);
+        font-family: monospace;
+        font-size: 1.2em;
+    }
+
+    .btn{
+        height: 70px;
+        width: 70px;
+        /* border: 1px solid red; */
+        background-color: red;
+        /* margin-top: 10px;
+        margin-left: 10px; */
+    }
+    .btn2{
+        height: 70px;
+        width: 70px;
+        /* border: 1px solid red; */
+        background-color: green;
+        /* margin-top: 10px;
+        margin-left: 10px; */
+    }
+    .btn3{
+        height: 70px;
+        width: 70px;
+        background-color: yellow;
+        /* border: 1px solid red; */
+        /* margin-top: 10px;
+        margin-left: 10px; */
+    }
+
+    .btn4{
+        height: 70px;
+        width: 70px;
+        background-color: blue;
+        /* border: 1px solid red; */
+        /* margin-top: 10px;
+        margin-left: 10px; */
+    }
+    .btn5{
+        height: 70px;
+        width: 70px;
+        background-color: orange;
+        /* border: 1px solid red;
+        margin-top: 10px;
+        margin-left: 10px; */
+    }
+    .btn6{
+        height: 70px;
+        width: 70px;
+        background-color: brown;
+        /* border: 1px solid red;
+        margin-top: 10px;
+        margin-left: 10px; */
+    }
+
+</style>
 <body>
-    <label for="">Enter Your First number</label>
+    
+    <div class="main_div">
+        <div id="boxx" class="box"></div>
+        <div class="box2">
+            <button class="btn" id="btn1" onclick="press()"></button>
+            <button class="btn2" id="green_btn" onclick="green()"></button>
+            <button class="btn3" id="yellow_btn" onclick="yellow()"></button>
+            <!-- <div class="btn4"></div>
+            <div class="btn5"></div> -->
+        </div>
+        <div class="box3">
+            <!-- <button class="btn" id="btn1" onclick="press()"></button>
+            <button class="btn2" id="green_btn" onclick="green()"></button>
+            <button class="btn3" id="yellow_btn" onclick="yellow()"></button> -->
+            <button class="btn4" id="blue_btn" onclick="blue()"></button>
+            <button class="btn5" id="orange_btn" onclick="orange()"></button>
+            <button class="btn6" id="brown_btn" onclick="brown()"></button>
+        </div>
+        <button class="box4" id="reset_btn" onclick="reset()">Click Me to clear</button>
+    </div>
+    <!-- <label for="">Enter Your First number</label>
 
     <input id="input" type="text">
     <br><br>
@@ -14,9 +131,9 @@
 
     <input id="input2" type="text">
     <br><br>
-    <!-- <label for="" >Type your operator (+,-,/,*)</label>
+    <label for="" >Type your operator (+,-,/,*)</label>
     <input type="text" id="options"> -->
-    <br>
+    <!-- <br>
     <select name="" id="options">
         <option value="">Select a operator</option>
         <option value="+">+</option>
@@ -24,11 +141,83 @@
         <option value="*">*</option>
         <option value="/">/</option>
     </select>
-<br><br>
-    <button onclick="cal()">click here to calculate</button>
+<br><br> -->
+    <!-- <button onclick="cal()">click here to calculate</button> -->
 
 </body>
 <script>
+    function press(){
+        let button1=document.getElementById('btn1')
+        let button2=document.getElementById('btnn2')
+        let button3=document.getElementById('btnn3')
+        let box=document.getElementById('boxx')
+        if(button1){
+            box.style.background="red";
+            box.style.boxShadow="10px 10px green inset"
+        }
+    }
+
+    function green(){
+        let green_btn=document.getElementById('green_btn')
+        let box=document.getElementById('boxx')
+        if(green_btn){
+            box.style.background="green"
+            box.style.boxShadow="10px 10px yellow inset"
+
+        }
+    }
+
+    function yellow(){
+        let yellow_btn=document.getElementById('green_btn')
+        let box=document.getElementById('boxx')
+        if(yellow_btn){
+            box.style.background="yellow"
+            box.style.boxShadow="10px 10px blue inset"
+
+        }
+    }
+    function blue(){
+        let blue_btn=document.getElementById('blue_btn')
+        let box=document.getElementById('boxx')
+        if(blue_btn){
+            box.style.background="blue"
+            box.style.boxShadow="10px 10px orange inset"
+
+        }
+    }
+    function orange(){
+        let orange_btn=document.getElementById('orange_btn')
+        let box=document.getElementById('boxx')
+        if(yellow_btn){
+            box.style.background="orange"
+            box.style.boxShadow="10px 10px brown inset"
+
+        }
+    }
+    function brown(){
+        let brown_btn=document.getElementById('brown_btn')
+        let box=document.getElementById('boxx')
+        if(brown_btn){
+            box.style.background="brown"
+            box.style.boxShadow="10px 10px red inset"
+
+        }
+    }
+    function reset(){
+        let reset_btn=document.getElementById('reset_btn')
+        let box=document.getElementById('boxx')
+        if(reset){
+            box.style.background="none"
+            box.style.boxShadow="10px 10px black inset"
+        }
+    }
+
+
+
+
+
+</script>
+<!-- <script>
 
     function cal(){
         
@@ -51,5 +240,5 @@
 
     }
 
-</script>
+</script> -->
 </html>
