@@ -6,16 +6,210 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- <h3 onclick="tax()">Click to know the tax on your car</h3>
+    <h4 id="tax"></h4> -->
+
+    <!-- <h1 onclick="cal()">click me ;)</h1>
+    <h2 id="cal"></h2> -->
+
+    <!-- <h1 onclick="marks()">Click me (❁´◡`❁)</h1>
+    <h2 id="mark"></h2> -->
+
+    <!-- <h2 onclick="email()">Click here to log in with email</h2>
+    <h2 onclick="mob()">Click here to log in with Mob_number</h2> -->
+
+    <!-- <h3 onclick="bonus()">Click here to Know about your Bonus</h3> -->
+
 </body>
 <script>
-    // 1. Write a Python program to check if a user is eligible for voting (accept age from the user)
-    let age = parseInt(prompt("Enter your age: "));
-    if(age >= 18){
-        document.write("You are eligible for voting")
-    }
-    else{
-        document.write("You are not eligible for voting")
-    }
+    // 1. Write a program to check if a user is eligible for voting (accept age from the user)
+
+    // let age = parseInt(prompt("Enter your age: "));
+    // if(age >= 18){
+    //     document.write("You are eligible for voting")
+    // }
+    // else{
+    //     document.write("You are not eligible for voting")
+    // }
+
+    // 2. Write a program to check whether the number entered by the user is odd or even.
+
+    // let num = parseInt(prompt("Enter a Number"))
+    // if(num % 2 == 0){
+    //     document.write("The number is even")
+    // }
+    // else{
+    //     document.write("The number is odd")
+    //     }
+
+    // 3. Write a Python program to display the last digit of a number entered by the user.
+
+    // let num = parseInt(prompt("Enter a Number"));
+    // let lastDigit = num % 10;
+    // document.write("The last digit of the number is " + lastDigit)
+
+    // 4. Write a program to check whether the last digit of a number entered by the user is divisible by 3 or not.
+
+    // let num = parseInt(prompt("Enter a Number"));
+    // let lastDigit = num % 10;
+    // if(lastDigit % 3 == 0){
+    //     document.write("The last digit of the number is divisible by 3")
+    //     }
+    //     else{
+    //         document.write("The last digit of the number is not divisible by 3")
+    //         }
+
+    // 5. Write a program to calculate tax on car purchasing:
+    // - Mahindra: 5% tax for prices between 7L to 10L
+    // - Audi: 10% tax for prices between 10L to 15L
+    // - Jaguar: 25% tax for prices between 15L to 20L
+    // - Mercedes: 30% tax for prices between 20L to 25L
+    // (Note: Price is always more than 7 lakh)
+
+    // let cartax=document.getElementById('tax');
+    // function tax(){
+    //     let car = prompt("Enter your car name");
+    //     let price = parseInt(prompt("Enter your car price"));
+
+    //     if (car=="mahindra"){
+    //         let tax = 5/100*(price);
+    //         cartax.innerHTML=(tax)
+    //     }
+
+    //     else if (car=="audi"){
+    //         let tax = 10/100*(price);
+    //         cartax.innerHTML=(tax)
+    //     }
+
+    //     else if (car=="jaguar"){
+    //         let tax = 25/100*(price);
+    //         cartax.innerHTML=(tax)
+    //     }
+
+    //     else if (car=="mercedes"){
+    //         let tax = 30/100*(price);
+    //         cartax.innerHTML=(tax)
+    //     }
+
+    //     else{
+    //         cartax.innerHTML=("Invalid car name")
+    //     }
+    // }
+
+    // 6. Write a Python program to perform addition, multiplication, division, and subtraction of two numbers given by the user by choosing options of operations
+
+    // let call=document.getElementById('cal');
+    // function cal(){
+    //     let num1 = parseInt(prompt("Enter your first number"));
+    //     let num2 = parseInt(prompt("Enter your second number"));
+    //     let operation = prompt("Enter your operation (+, -, *, /)");
+
+    //     if (operation=="+"){
+    //         let result = num1 + num2;
+    //         call.innerHTML=(result)
+    //     }
+    //     else if (operation=="-"){
+    //         let result = num1 - num2;
+    //         call.innerHTML=(result)
+    //         }
+    //     else if (operation=="*"){
+    //         let result = num1 * num2;
+    //         call.innerHTML=(result)
+    //         }
+    //     else if (operation=="/"){
+    //         if (num2!=0){
+    //         let result = num1 / num2;
+    //         call.innerHTML=(result)
+    //         }}
+    //     else{
+    //         call.innerHTML=("Error! Invalid operation")
+    //         }
+                
+        
+    // }
+
+    // 7. Compare an aspirant's marks of UPSC pre, main, and interview, and select him based on the marks.
+    // - Minimum marks required:
+    // - Prelims: 300
+    // - Mains: 400
+    // - Interview: 450
+
+//     let mark=document.getElementById('mark')
+//     function marks(){
+//         let pre=parseInt(prompt("Enter your prelims marks"))
+//         if(pre>=300){
+//             let main=parseInt(prompt("Enter your Mains marks"))
+//             if(main>=400){
+//                 let interview=parseInt(prompt("Enter your Interview Score"))
+//                 if (interview>=450){
+//                     mark.innerHTML=("Congratulations! You are selected for UPSC")
+//                 }
+//                 else{
+//                     mark.innerHTML=("Sorry! You are not selected for UPSC")
+//                     }
+//             }
+//             else{
+//                 mark.innerHTML=("Sorry, you are not eligible for Interview")
+//             }
+
+//     }
+
+//     else{
+//         mark.innerHTML=("Sorry, you are not eligible for mains exam")
+//     }
+// }
+
+// Question 8
+
+// function email(){
+//     let mail=prompt("Enter your email")
+//     let pass1=prompt("Enter your password")
+//     if (mail && pass1==123){
+//         alert("Login Successful")
+//     }
+//     else{
+//         alert("Invalid Email or Password")
+//         }
+// }
+
+// function mob(){
+//     let mob_num=prompt("Enter your mobile number")
+//     let pass2=prompt("Enter your password")
+//     if (mob_num && pass2==123){
+//         alert("Login Successful")
+//     }
+//     else{
+//         alert("Invalid Mobile Number or Password")
+//         }
+// }
+
+// 9. Display the greatest number among three numbers entered by the user.
+
+// let num1=parseInt(prompt("Enter your first number"));
+// let num2=parseInt(prompt("Enter your second number"));
+// let num3=parseInt(prompt("Enter your third number"));
+// if(num1>num2 && numb1>numb3){
+//     alert("The greatest number is "+num1);
+// }
+// else if(num2>num1 && num2>num3){
+//     alert("The greatest number is "+num2);
+//     }
+//     else{
+//         alert("The greatest number is "+num3);
+//         }
+
+// function bonus(){
+//     let service=parseInt(prompt("Enter your service years in number"));
+//     let salary=parseInt(prompt("Enter your salary in numbers"));
+//     if(service>=5){
+//         let bonuss=5/100*(salary);
+//         alert("Your bonus is "+bonuss);
+//         }
+//     else{
+//         alert("You are not eligible for bonus");
+//     }
+// }
+
+
 </script>
 </html>
