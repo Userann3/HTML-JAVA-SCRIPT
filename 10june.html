@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="cal()">Click here to Enter you login details</button>
+    <center><h1 id="get"></h1></center>
+</body>
+<script>
+    let get=document.getElementById('get');
+    function cal(){
+        let name=prompt("Enter your Username");
+        let pass=prompt("Enter your Password");
+        if(name==="admin" && pass==="123"){
+            alert("Login Successful");
+            get.innerHTML="Welcome "+name;
+        }
+        else{
+            alert("Invalid Credentials");
+        }
+    }
+</script>
+</html>
