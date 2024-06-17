@@ -152,12 +152,13 @@
 <script>
     function press(){
         let button1=document.getElementById('btn1')
-        let button2=document.getElementById('btnn2')
-        let button3=document.getElementById('btnn3')
+        // let button2=document.getElementById('btnn2')
+        // let button3=document.getElementById('btnn3')
         let box=document.getElementById('boxx')
         let text=document.getElementById('text')
         if(button1){
             box.style.background="red";
+            box.style.transition="2s"
             box.style.boxShadow="10px 10px green inset"
             text.style.display="none"
         }
@@ -231,6 +232,7 @@
             box.style.background="none"
             box.style.boxShadow="10px 10px black inset"
             text.style.display="block"
+            text.style.transition="2s"
         }
     }
 
