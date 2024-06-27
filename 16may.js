@@ -24,3 +24,4 @@
 // let h=Number(prompt("Enter your Height in Meters"))
 // let bmi=w/(h*h);
 // document.write(`Your BMI is: ${bmi}`)
+

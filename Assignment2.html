@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <h3 onclick="tax()">Click to know the tax on your car</h3>
-    <h4 id="tax"></h4> -->
+    <h3 onclick="tax()">Click to know the tax on your car</h3>
+    <h4 id="tax"></h4>
 
     <!-- <h1 onclick="cal()">click me ;)</h1>
     <h2 id="cal"></h2> -->
@@ -66,35 +66,35 @@
     // - Mercedes: 30% tax for prices between 20L to 25L
     // (Note: Price is always more than 7 lakh)
 
-    // let cartax=document.getElementById('tax');
-    // function tax(){
-    //     let car = prompt("Enter your car name");
-    //     let price = parseInt(prompt("Enter your car price"));
+    let cartax=document.getElementById('tax');
+    function tax(){
+        let car = prompt("Enter your car name");
+        let price = parseInt(prompt("Enter your car price"));
 
-    //     if (car=="mahindra"){
-    //         let tax = 5/100*(price);
-    //         cartax.innerHTML=(tax)
-    //     }
+        if (car=="mahindra"){
+            let tax = 5/100*(price);
+            cartax.innerHTML=(tax)
+        }
 
-    //     else if (car=="audi"){
-    //         let tax = 10/100*(price);
-    //         cartax.innerHTML=(tax)
-    //     }
+        else if (car=="audi"){
+            let tax = 10/100*(price);
+            cartax.innerHTML=(tax)
+        }
 
-    //     else if (car=="jaguar"){
-    //         let tax = 25/100*(price);
-    //         cartax.innerHTML=(tax)
-    //     }
+        else if (car=="jaguar"){
+            let tax = 25/100*(price);
+            cartax.innerHTML=(tax)
+        }
 
-    //     else if (car=="mercedes"){
-    //         let tax = 30/100*(price);
-    //         cartax.innerHTML=(tax)
-    //     }
+        else if (car=="mercedes"){
+            let tax = 30/100*(price);
+            cartax.innerHTML=(tax)
+        }
 
-    //     else{
-    //         cartax.innerHTML=("Invalid car name")
-    //     }
-    // }
+        else{
+            cartax.innerHTML=("Invalid car name")
+        }
+    }
 
     // 6. Write a Python program to perform addition, multiplication, division, and subtraction of two numbers given by the user by choosing options of operations
 
@@ -134,30 +134,30 @@
     // - Mains: 400
     // - Interview: 450
 
-//     let mark=document.getElementById('mark')
-//     function marks(){
-//         let pre=parseInt(prompt("Enter your prelims marks"))
-//         if(pre>=300){
-//             let main=parseInt(prompt("Enter your Mains marks"))
-//             if(main>=400){
-//                 let interview=parseInt(prompt("Enter your Interview Score"))
-//                 if (interview>=450){
-//                     mark.innerHTML=("Congratulations! You are selected for UPSC")
-//                 }
-//                 else{
-//                     mark.innerHTML=("Sorry! You are not selected for UPSC")
-//                     }
-//             }
-//             else{
-//                 mark.innerHTML=("Sorry, you are not eligible for Interview")
-//             }
+    let mark=document.getElementById('mark')
+    function marks(){
+        let pre=parseInt(prompt("Enter your prelims marks"))
+        if(pre>=300){
+            let main=parseInt(prompt("Enter your Mains marks"))
+            if(main>=400){
+                let interview=parseInt(prompt("Enter your Interview Score"))
+                if (interview>=450){
+                    mark.innerHTML=("Congratulations! You are selected for UPSC")
+                }
+                else{
+                    mark.innerHTML=("Sorry! You are not selected for UPSC")
+                    }
+            }
+            else{
+                mark.innerHTML=("Sorry, you are not eligible for Interview")
+            }
 
-//     }
+    }
 
-//     else{
-//         mark.innerHTML=("Sorry, you are not eligible for mains exam")
-//     }
-// }
+    else{
+        mark.innerHTML=("Sorry, you are not eligible for mains exam")
+    }
+}
 
 // Question 8
 
