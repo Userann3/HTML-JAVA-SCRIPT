@@ -91,3 +91,8 @@ root2 = (-b+z)/(2*a)
 print("")
 print("value of root 1 is" , root1)
 print("value of root 2 is" , root2)
+
+
+
+
+
